@@ -11,10 +11,12 @@ end
 
 get '/users' do
   @users = YAML.load_file('data/users.yaml')
-  @user_names = @users.keys
+  @user_names = @users.keys.map(&:capitalize)
 
   erb :users
 end
 
 get '/users/:name' do
+  # params[:name]
+  erb :user
 end
