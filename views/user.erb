@@ -1,1 +1,15 @@
-<h1><%= params[:name].capitalize %></h1>
+<h1><%= @name.capitalize %></h1>
+
+<h3>Email</h3>
+<ul>
+  <li>
+    <%= @email %>
+  </li>
+</ul>
+
+<h3>Interests</h3>
+  <ul>
+    <li>
+      <%= @interests %>
+    </li>
+  </ul>

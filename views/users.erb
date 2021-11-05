@@ -4,7 +4,7 @@
   <% @user_names.each do |name| %>
     <li>
       <a href="users/<%= name %>">
-        <%= name %>
+        <%= name.capitalize %>
       </a>
     </li> 
   <% end %>
